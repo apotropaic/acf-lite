@@ -11,6 +11,12 @@
 *  @Copyright: Elliot Condon
 */
 
+//hmmm... looks like the plugin is installed
+if(function_exists('get_fields'))
+{
+	exit;
+}
+
 include('core/api.php');
 
 $acf = new acf_lite();
